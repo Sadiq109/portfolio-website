@@ -1,18 +1,18 @@
-# Portfolio website
+# My portfolio website
 
-A single-page personal portfolio for Sadiq Mohamud, a University of Minnesota Twin Cities student pursuing bachelor's degrees in Computer Science and Information Technology Infrastructure.
+I'm Sadiq Mohamud, a University of Minnesota Twin Cities student pursuing bachelor's degrees in Computer Science and Information Technology Infrastructure. This is my single-page personal portfolio.
 
-## Features
+## What I included
 
-- Project links for software, infrastructure and security work
-- Responsive layout
-- Dark mode toggle
-- Contact links for GitHub, LinkedIn and email
+- My software, infrastructure and security project links
+- A responsive layout
+- A dark mode toggle
+- My GitHub, LinkedIn and email contact links
 
-## Run locally
+## How I run it locally
 
-Open `index.html` in a web browser. No build step or dependencies are required.
+I open `index.html` in a web browser. I don't need a build step or any dependencies.
 
-## Featured project
+## My featured project
 
-[InfraSentinel](https://github.com/Sadiq109/infrasentinel) is a tested Python CLI for auditing Linux hosts for common security and reliability risks.
+[InfraSentinel](https://github.com/Sadiq109/infrasentinel) is my tested Python CLI for auditing Linux hosts for common security and reliability risks.
