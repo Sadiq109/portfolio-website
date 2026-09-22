@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sadiq Mohamud – Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #283593;
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 5px 0 0;
+      font-style: italic;
+    }
+    nav {
+      background: #3949ab;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px 0;
+    }
+    nav a,
+    nav button {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 0.9em;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    nav button:hover,
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    #about .profile-photo {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      background: #ddd;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      font-style: italic;
+    }
+    #projects .project {
+      margin-bottom: 30px;
+    }
+    #projects .project h3 {
+      margin: 0 0 5px;
+    }
+    #projects .project a {
+      color: #1e88e5;
+      text-decoration: none;
+    }
+    #projects .project a:hover {
+      text-decoration: underline;
+    }
+    #contact p {
+      margin: 5px 0;
+    }
+    /* Dark mode styles */
+    .dark-mode {
+      background: #212121;
+      color: #ddd;
+    }
+    .dark-mode header {
+      background: #1a237e;
+    }
+    .dark-mode nav {
+      background: #283593;
+    }
+    .dark-mode a {
+      color: #90caf9;
+    }
+    .dark-mode .profile-photo {
+      background: #444;
+      color: #bbb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Sadiq Mohamud</h1>
+    <p>Computer Science & IT Infrastructure Student</p>
+  </header>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <button id="toggle-theme">Toggle Dark Mode</button>
+  </nav>
+  <section id="about">
+    <div class="profile-photo">Your Photo</div>
+    <p>
+      University of Minnesota Twin Cities student pursuing bachelor's degrees in Computer
+      Science and Information Technology Infrastructure, graduating in December 2027. I build
+      practical projects in Python and SQL and am interested in cybersecurity, software
+      engineering and IT infrastructure. My work includes an RFID check-in kiosk for a
+      homeless-services organization and tools for analyzing operational data safely.
+    </p>
+  </section>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+      <h3>InfraSentinel</h3>
+      <p>A Python and SQLite CLI that parses Linux authentication logs and detects repeated failed login activity.</p>
+      <a href="https://github.com/Sadiq109/infrasentinel" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Iris Visualization</h3>
+      <p>A data visualization of the Iris dataset using Python, pandas and matplotlib.</p>
+      <a href="https://github.com/Sadiq109/Sadiq-visualization" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>To-Do CLI</h3>
+      <p>A command-line to-do list manager that lets you add, list and complete tasks.</p>
+      <a href="https://github.com/Sadiq109/todo-cli" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Expense Tracker</h3>
+      <p>Track expenses in a CSV file and generate spending reports by category.</p>
+      <a href="https://github.com/Sadiq109/expense-tracker" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Music Player</h3>
+      <p>A web-based music player with a small playlist of sample songs.</p>
+      <a href="https://github.com/Sadiq109/music-player" target="_blank" rel="noopener noreferrer">View on GitHub</a>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sadiqmohamud7@gmail.com">sadiqmohamud7@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/Sadiq109" target="_blank" rel="noopener noreferrer">github.com/Sadiq109</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sadiq-mohamud/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sadiq-mohamud</a></p>
+  </section>
+  <script>
+    // Toggle dark mode
+    document.getElementById('toggle-theme').addEventListener('click', function() {
+      document.body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>
+
