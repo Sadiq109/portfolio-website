@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sadiq Mohamud | Software, IT Infrastructure &amp; Security</title>
+  <meta name="description" content="Sadiq Mohamud - Computer Science and IT Infrastructure student at the University of Minnesota Twin Cities. Software, infrastructure and cybersecurity projects.">
+  <meta name="theme-color" content="#0b1020">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Sadiq Mohamud | Software, IT Infrastructure &amp; Security">
+  <meta property="og:description" content="CS + IT Infrastructure student at UMN Twin Cities building practical software, infrastructure and security projects.">
+  <meta property="og:url" content="https://sadiq109.github.io/portfolio-website/">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var theme = saved || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+      document.documentElement.setAttribute('data-theme', theme);
+      document.documentElement.classList.add('js');
+    })();
+  </script>
+</head>
+<body>
+  <div class="progress" id="progress"></div>
+
+  <header class="nav" id="nav">
+    <a class="brand" href="#home" aria-label="Back to top"><span>SM</span></a>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn" id="theme-toggle" type="button" aria-label="Switch color theme">
+        <svg class="sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v3M12 19.5v3M1.5 12h3M19.5 12h3M4.6 4.6l2.1 2.1M17.3 17.3l2.1 2.1M4.6 19.4l2.1-2.1M17.3 6.7l2.1-2.1"/></svg>
+        <svg class="moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 1 1 9.5 3.5a7 7 0 0 0 11 11z"/></svg>
+      </button>
+      <button class="icon-btn menu-btn" id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <canvas id="particles" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow reveal">Hi, I'm</p>
+        <h1 class="reveal">Sadiq Mohamud</h1>
+        <p class="typed-line reveal">I build <span id="typed" class="typed"></span><span class="caret" aria-hidden="true"></span></p>
+        <p class="hero-sub reveal">Computer Science + IT Infrastructure student at the University of Minnesota Twin Cities, graduating December 2027.</p>
+        <div class="hero-cta reveal">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+        <div class="hero-links reveal">
+          <a href="https://github.com/Sadiq109" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.26 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/sadiq-mohamud/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="mailto:sadiqmohamud7@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2 .9v.3l8 5.3 8-5.3v-.3H4zm16 2.7-7.45 4.93a1 1 0 0 1-1.1 0L4 9.1V18h16V9.1z"/></svg>
+          </a>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">01</span>
+        <h2>About me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>I'm working toward two degrees at the University of Minnesota Twin Cities: a <strong>Bachelor of Arts in Computer Science</strong> and a <strong>Bachelor of Applied Science in IT Infrastructure</strong> (Self-Designed Track). I graduate in December 2027.</p>
+          <p>I like the spot where software meets the systems it runs on. I write code, and I also care about how it's deployed, monitored and kept secure. My goal is a career across software engineering, IT infrastructure and cybersecurity.</p>
+          <p>Outside class I'm part of <strong>MLT</strong> (Management Leadership for Tomorrow), <strong>CodePath</strong>, <strong>SEO EDGE</strong> and <strong>ColorStack</strong> at UMN.</p>
+        </div>
+        <div class="stats reveal">
+          <div class="stat glass"><span class="stat-num" data-count="2">0</span><span class="stat-label">Bachelor's degrees in progress</span></div>
+          <div class="stat glass"><span class="stat-num" data-count="3">0</span><span class="stat-label">Software engineering internship terms</span></div>
+          <div class="stat glass"><span class="stat-num">Dec '27</span><span class="stat-label">Graduation</span></div>
+          <div class="stat glass"><span class="stat-num">UMN</span><span class="stat-label">Twin Cities</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">02</span>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card glass reveal">
+          <h3><span class="dot d1"></span>Languages</h3>
+          <ul class="chips"><li>Python</li><li>SQL</li><li>Java</li><li>JavaScript</li><li>C#</li><li>C / C++</li><li>HTML / CSS</li></ul>
+        </div>
+        <div class="skill-card glass reveal">
+          <h3><span class="dot d2"></span>Infrastructure &amp; Security</h3>
+          <ul class="chips"><li>Linux</li><li>Log analysis</li><li>Detection rules</li><li>SQLite</li><li>Raspberry Pi</li></ul>
+        </div>
+        <div class="skill-card glass reveal">
+          <h3><span class="dot d3"></span>Tools &amp; Frameworks</h3>
+          <ul class="chips"><li>Git &amp; GitHub</li><li>GitHub Actions CI</li><li>Flask</li><li>pytest</li><li>Google Sheets API</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">03</span>
+        <h2>Experience</h2>
+      </div>
+      <ol class="timeline">
+        <li class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card glass">
+            <span class="t-date">Jan 2026 - Jun 2026</span>
+            <h3>Software Engineer Intern</h3>
+            <p class="t-org">CLUES &middot; Minneapolis, MN</p>
+            <p>Part-time internship at CLUES (Best Buy Teen Tech Center), working on software projects.</p>
+          </div>
+        </li>
+        <li class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card glass">
+            <span class="t-date">Jun 2023 - Aug 2023</span>
+            <h3>Software Engineer Intern</h3>
+            <p class="t-org">Accenture &middot; Minneapolis, MN</p>
+            <p>Built a Python and SQL project that cut process cycle time by about 10%.</p>
+          </div>
+        </li>
+        <li class="t-item reveal">
+          <div class="t-dot"></div>
+          <div class="t-card glass">
+            <span class="t-date">Jan 2023 - Jun 2023</span>
+            <h3>Software Engineer Intern</h3>
+            <p class="t-org">CLUES &middot; Minneapolis, MN</p>
+            <p>First internship at CLUES (Best Buy Teen Tech Center), part-time alongside school.</p>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">04</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="filters reveal" role="group" aria-label="Filter projects">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="security">Infrastructure &amp; Security</button>
+        <button class="filter" type="button" data-filter="software">Software</button>
+      </div>
+      <div class="projects-grid" id="projects-grid">
+        <article class="project glass tilt reveal" data-cat="security">
+          <div class="p-top">
+            <span class="p-badge">Featured</span>
+            <svg class="p-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.5 8 11 4.6-1.5 8-6 8-11V5l-8-3z"/></svg>
+          </div>
+          <h3>InfraSentinel</h3>
+          <p>A Python CLI that turns Linux authentication logs into structured SQLite records and flags suspicious activity, like repeated failed SSH logins, with explainable detection rules.</p>
+          <ul class="tags"><li>Python</li><li>SQLite</li><li>Linux</li><li>pytest</li><li>GitHub Actions</li></ul>
+          <div class="p-links">
+            <a class="btn small" href="https://github.com/Sadiq109/infrasentinel" target="_blank" rel="noopener noreferrer">View code</a>
+          </div>
+        </article>
+        <article class="project glass tilt reveal" data-cat="software security">
+          <div class="p-top">
+            <span class="p-badge alt">Hardware + Software</span>
+            <svg class="p-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v12H4zM8 20h8M12 16v4"/></svg>
+          </div>
+          <h3>RFID Check-in Kiosk</h3>
+          <p>An RFID check-in kiosk I built for Listening House, a homeless-services organization. It runs a Python and Flask app on a Raspberry Pi and records check-ins to Google Sheets.</p>
+          <ul class="tags"><li>Python</li><li>Flask</li><li>Raspberry Pi</li><li>RFID</li><li>Google Sheets</li></ul>
+          <div class="p-links"><span class="p-note">Built for a nonprofit - code not public</span></div>
+        </article>
+        <article class="project glass tilt reveal" data-cat="software">
+          <div class="p-top">
+            <span class="p-badge alt">CLI</span>
+            <svg class="p-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3zM3 9h18M8 13h3M8 16h6"/></svg>
+          </div>
+          <h3>Expense Tracker</h3>
+          <p>A Python CLI that records expenses in CSV and reports spending by category, with exact decimal money math, input validation, malformed-file handling and tests.</p>
+          <ul class="tags"><li>Python</li><li>CSV</li><li>pytest</li><li>GitHub Actions</li></ul>
+          <div class="p-links"><span class="p-note">Private repo - available on request</span></div>
+        </article>
+        <article class="project glass tilt reveal" data-cat="software">
+          <div class="p-top">
+            <span class="p-badge alt">Web</span>
+            <svg class="p-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></svg>
+          </div>
+          <h3>This Portfolio</h3>
+          <p>A site written from scratch with no frameworks: a canvas particle background, a typing effect, scroll animations, project filters and a light/dark theme. Hosted on GitHub Pages.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>GitHub Pages</li></ul>
+          <div class="p-links">
+            <a class="btn small" href="https://github.com/Sadiq109/portfolio-website" target="_blank" rel="noopener noreferrer">View code</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-head reveal">
+        <span class="section-num">05</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-card glass reveal">
+        <p class="contact-lead">I'm looking for software engineering, IT infrastructure and cybersecurity internships. The fastest way to reach me is email.</p>
+        <a class="btn primary big" href="mailto:sadiqmohamud7@gmail.com">sadiqmohamud7@gmail.com</a>
+        <div class="contact-links">
+          <a href="https://github.com/Sadiq109" target="_blank" rel="noopener noreferrer">github.com/Sadiq109</a>
+          <a href="https://www.linkedin.com/in/sadiq-mohamud/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sadiq-mohamud</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year">2026</span> Sadiq Mohamud. Made with HTML, CSS and JavaScript. No frameworks.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
