@@ -1,18 +1,35 @@
 # My portfolio website
 
-I'm Sadiq Mohamud, a University of Minnesota Twin Cities student pursuing bachelor's degrees in Computer Science and Information Technology Infrastructure. This is my single-page personal portfolio.
+I'm Sadiq Mohamud, a University of Minnesota Twin Cities student pursuing a BA in Computer Science and a BAS in IT Infrastructure. This is my personal portfolio.
 
-## What I included
+Live site: https://sadiq109.github.io/portfolio-website/
 
-- My software, infrastructure and security project links
-- A responsive layout
-- A dark mode toggle
-- My GitHub, LinkedIn and email contact links
+## What's in it
 
-## How I run it locally
+- An animated hero with a canvas particle network and a typing effect
+- A sticky glass navbar that highlights the section you're reading, plus a scroll progress bar
+- Scroll-reveal animations and count-up stats
+- A skills grid and an experience timeline
+- Project cards with 3D hover tilt, tech tags and category filters
+- A light/dark theme toggle that remembers your choice
+- A mobile menu and responsive layout
+- Respects `prefers-reduced-motion`, and the content stays visible if JavaScript is off
 
-I open `index.html` in a web browser. I don't need a build step or any dependencies.
+## How it's built
 
-## My featured project
+Plain HTML, CSS and JavaScript with no frameworks or build step:
 
-[InfraSentinel](https://github.com/Sadiq109/infrasentinel) is my tested Python CLI for auditing Linux hosts for common security and reliability risks.
+- `index.html` - page structure and content
+- `styles.css` - theme variables, layout, animations and responsive rules
+- `script.js` - theme toggle, nav, reveal, typing, filters, tilt and particles
+- `favicon.svg` - site icon
+
+## Run it locally
+
+Open `index.html` in a browser, or serve the folder:
+
+```bash
+python3 -m http.server 8000
+```
+
+GitHub Pages deploys it from the `main` branch.
